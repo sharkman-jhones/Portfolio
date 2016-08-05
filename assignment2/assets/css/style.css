@@ -43,10 +43,6 @@ input{
 	background-color: #ff407e;
 }
 
-.nameContact, .emailContact, .messageContact{
-	padding: 15px 0px 5px 0px;
-}
-
 .contact{
 	border : 1px solid #DDD;
 	float: left;
@@ -58,6 +54,11 @@ input{
 	overflow: auto;
 	margin-bottom: 100px;
 	max-width: 270px;
+}
+
+.contact img{
+	height: 75px;
+	width: auto;
 }
 
 body{
@@ -93,7 +94,7 @@ h2{
 	font-size: 24px;
 }
 
-.about, .portfolio, .contactField{
+.container{
 	border: 1px solid #DDD;
 	float: left;
 	padding: 20px;
@@ -109,21 +110,25 @@ h2{
 	float: left;
 	padding: 25px;
 	background-color: #4AAAA5;
-	margin-left: 30px;
+	margin-left: 40px;
 	font-family: serif;
 	color: white;
 	font-weight: bold;
 	font-size: 30px;
 }
 
+.navbar{
+	margin-right: 400px;
+}
+
 nav{
 	float: right;
-	padding-top: 30px;
-	background-color: white;
+	margin-top: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-right: solid #777 1px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	margin-right: 480px;
 	color:#777;
-	display: block;
 }
 
 .footer{
@@ -141,20 +146,28 @@ nav{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.img1, .img2, .img3, .img4, .img5{
+article{
+	height: 225px;
+	width: 300px;
 	float: left;
 	margin: 10px;
-	width: 300px;
-	height: auto;
 	position: relative;
 }
 
-.imgText{
+article h3:hover{
+	background-color: #ff407e;
+}
+
+article img{
+	height: 100%;
+}
+
+article h3{
 	position: absolute;
-	background-color: #4AAAA5;
-	width: 100%;
+	background-color: #4AAAA5;	
 	margin-top: -80px;
 	text-align: center;
+	width: 100%;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	color: white;
 	padding-top: 20px;
@@ -162,6 +175,26 @@ nav{
 	font-size: 18px;
 }
 
-.imgText:hover{
-	color: #ff407e;
+@media screen and (max-width: 980px) {
+
+	.container{
+	width: 40%;
+	margin-left: 70px;
+	}
+
+	.nameTitle{
+		margin-left: 70px;
+	}
+
+	.contact img{
+		height: 50px;
+	}
+
+	.navbar{
+		margin-right: 200px;
+	}
+
+	.footer{
+		margin-top: 200px;
+	}
 }
