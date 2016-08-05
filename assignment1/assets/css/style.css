@@ -53,7 +53,7 @@ input{
 	font-size: 24px;
 	overflow: auto;
 	margin-bottom: 100px;
-	max-width: 270px;
+	width: 270px;
 }
 
 .contact img{
@@ -100,7 +100,7 @@ h2{
 	padding: 20px;
 	margin-top:20px;
 	margin-left: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 100px;
 	width: 650px;
 	background-color: white;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -126,9 +126,14 @@ nav{
 	margin-top: 30px;
 	padding-right: 15px;
 	padding-left: 15px;
-	border-right: solid #777 1px;
+	
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color:#777;
+}
+
+#portfNav{
+	border-right: solid #777 1px;
+	border-left: solid #777 1px;
 }
 
 .footer{
@@ -179,11 +184,11 @@ article h3{
 
 	.container{
 	width: 40%;
-	margin-left: 70px;
+	margin-left: 120px;
 	}
 
 	.nameTitle{
-		margin-left: 70px;
+		margin-left: 120px;
 	}
 
 	.contact img{
@@ -191,10 +196,33 @@ article h3{
 	}
 
 	.navbar{
-		margin-right: 200px;
+		margin-right: 150px;
 	}
 
 	.footer{
 		margin-top: 200px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container {
+	width: 90%;
+	margin: 20px
+	}
+
+	.contact {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 100px;
+	}
+
+	.nameTitle{
+		margin-left: 20px;
+	}
+
+	.navbar{
+		margin-right: 20px;
 	}
 }
