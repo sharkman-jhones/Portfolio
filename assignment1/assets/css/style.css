@@ -68,7 +68,7 @@ body{
 }
 
 #me{
-	width: 45%;	
+	width: 315px;	
 	height: auto;
 	overflow: auto;
 	float: left;
@@ -152,7 +152,6 @@ nav{
 }
 
 article{
-	height: 225px;
 	width: 300px;
 	float: left;
 	margin: 10px;
@@ -164,7 +163,7 @@ article h3:hover{
 }
 
 article img{
-	height: 100%;
+	width: 100%;
 }
 
 article h3{
@@ -183,8 +182,12 @@ article h3{
 @media screen and (max-width: 980px) {
 
 	.container{
-	width: 40%;
+	width: 320px;
 	margin-left: 120px;
+	}
+
+	.contact{
+		width: 170px;
 	}
 
 	.nameTitle{
@@ -193,6 +196,11 @@ article h3{
 
 	.contact img{
 		height: 50px;
+		padding: 1px;
+	}
+
+	.contact h2{
+		font-size: 18px;
 	}
 
 	.navbar{
@@ -224,5 +232,47 @@ article h3{
 
 	.navbar{
 		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 640px){
+	
+	header{
+		position: static;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	article{
+		height: auto;
+		width: auto;
+	}
+
+	.nameTitle{
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.container, .contact{
+		margin: 10px;
+		width: 90%;
+	}
+
+	.contact{
+		margin-bottom: 100px;
+	}
+
+	.navbar{
+		width: 100%;
+	}
+	nav{
+		display: inline-block;
+		padding: 0px;
+		margin-bottom: 20px;
+		width: 33%;
+		text-align: center;
 	}
 }
