@@ -21,7 +21,7 @@ footer{
 	color: #ff407e;
 }
 
-.col-sm-5, .col-sm-4{
+.col-sm-7, .col-sm-4{
 	border-radius: 3px;
 	background-color: white;
 	padding-top: 10px;
@@ -49,6 +49,6 @@ h4{
 	color: white;
 }
 
-.form-control{
-	margin-right: 5px;
+.form-group{
+	margin-right: 15px;
 }
