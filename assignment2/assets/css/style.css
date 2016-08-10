@@ -21,7 +21,7 @@ footer{
 	color: #ff407e;
 }
 
-.col-sm-6, .col-sm-4{
+.col-sm-5, .col-sm-4{
 	border-radius: 3px;
 	background-color: white;
 	padding-top: 10px;
@@ -37,4 +37,18 @@ h4{
 	background-color: #4AAAA5;
 	padding: 5px 0px 5px 2px;
 	color: white;
+}
+
+.btn {
+		background-color: #4AAAA5;
+		margin-top: 5px;
+		color: white;
+	}
+.btn:hover{
+	background-color: #ff407e;
+	color: white;
+}
+
+.form-control{
+	margin-right: 5px;
 }

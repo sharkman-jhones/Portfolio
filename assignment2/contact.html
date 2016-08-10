@@ -30,22 +30,32 @@
 </header>
 
   <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-sm-6">
-    <h4>Contact</h4>
-<form>
+    <div class = "row">
+    <div class = "col-sm-5">
+      <h4>Contact</h4>
+    <form>
+    <div class = "row">
+        <div class="form-group">
+        <label for = "usr">Name</label>
+        <input type="text" class="form-control" id="usr" placeholder="  John Smith">
+      </div>
+    </div>
+
 <div class = "row">
-      Name
-        <input type="text" placeholder="  John Smith">
+  <div class="form-group">
+      <label for = "usr">E-Mail</label>
+        <input type="text" class="form-control" id="usr" placeholder="  example@gmail.com">
       </div>
-      <div class = "row">
-        E-Mail
-        <input type="text" placeholder="  example@gmail.com">
       </div>
+
       <div class = "row">      
-        Message
-        <input class="messageInput" type="text">
-        <input type="submit" value="Submit">
+      <div class="form-group">
+    <label for="comment">Message</label>
+     <textarea class="form-control" rows="5" id="comment"></textarea>
+     <div class="row">
+     <input class="btn" type="submit" value="Submit">
+     </div>
+</div>
       </div>
   </form>
   </div>
